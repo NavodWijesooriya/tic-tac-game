@@ -2,7 +2,9 @@ import Player from './components/Player.js';
 
 function App() {
 
-    return <main>
+    return (
+    
+    <main>
 
         <div id="game-container">
 
@@ -14,11 +16,11 @@ function App() {
             GAME BOARD
 
         </div>
-
+        LOG
     </main>
 
 
-
+    );
 }
 
-export default App
+export default App;
