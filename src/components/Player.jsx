@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../index.css';
 
 export default function Player({ initialName, symbol, isActive,  onChangeName }) {
     const [playerName, setPlayerName] = useState(initialName);
