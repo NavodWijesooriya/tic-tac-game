@@ -57,6 +57,21 @@ h1 {
   position: relative;
 }
 
+@media(min-width:375) and (max-wdith:425){
+#game-container{
+  max-width: 10rem;
+}
+#players {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10rem;
+}
+}
+
 #players {
   list-style: none;
   padding: 0;
@@ -336,3 +351,20 @@ ol {
   }
 }
 
+@media (max-width: 425px) {
+  .game-container {
+    padding: 10px;
+  }
+}
+
+
+@media screen and (max-width: 893px) {
+  #game-board button {
+   width: 5rem;
+   height: 5rem;
+  }
+
+  #game-hints button{
+    margin-top: 1.5rem
+  }
+}
