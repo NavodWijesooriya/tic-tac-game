@@ -18,11 +18,9 @@ html {
 }
 
 body {
-  background: radial-gradient(
-      circle at top,
+  background: radial-gradient(circle at top,
       rgba(241, 210, 70, 0.98),
-      rgba(250, 176, 103, 0.87)
-    ),
+      rgba(250, 176, 103, 0.87)),
     url('/public/bg-pattern.png');
   background-repeat: repeat;
   background-size: 100% 100%, 30% 30%, 100% 100%;
@@ -183,7 +181,7 @@ ol {
   margin: 3rem 0;
   padding: 0;
   flex-direction: column;
- 
+
 }
 
 #game-board ol {
@@ -307,6 +305,7 @@ ol {
     opacity: 0;
     transform: translateX(-30%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -317,9 +316,11 @@ ol {
   0% {
     color: #e1dec7;
   }
+
   50% {
     color: #9f9d83;
   }
+
   100% {
     color: #e1dec7;
   }
@@ -329,9 +330,11 @@ ol {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
@@ -342,14 +345,45 @@ ol {
     border-color: #f6e35a;
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
   }
+
   50% {
     border-color: #f8c031;
     box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
   }
+
   100% {
     border-color: #f6e35a;
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
   }
+}
+
+
+@media (min-width:300px) and (max-width:425px)
+ {
+  span.player-name {
+    font-size: 0.8rem;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+  }
+  span.player-symbol{
+    font-size: x-small;
+  }
+
+#game-board button {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background: #aca788;
+  color: #3f3b00;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: 'Caprasimo', cursive;
+  padding: 1rem;
+}
+    
+  
 }
 
 @media (max-width: 425px) {
@@ -369,3 +403,4 @@ ol {
     margin-top: 1.5rem
   }
 }
+
