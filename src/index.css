@@ -55,6 +55,10 @@ h1 {
   position: relative;
 }
 
+@media(min-width:375) and (max-wdith:425){
+#game-container{
+  max-width: 10rem;
+}
 #players {
   list-style: none;
   padding: 0;
@@ -62,7 +66,18 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap:10rem;
+}
+}
+
+#players {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
 }
 
 #players li {
@@ -83,7 +98,7 @@ h1 {
 }
 
 #players button {
-  width: 3rem;
+  width: 2rem;
   border: none;
   background: none;
   color: #c3ba78;
@@ -92,6 +107,7 @@ h1 {
   transition: color 0.2s;
   padding: 0.5rem 0.25rem 0.25rem 0.25rem;
   text-align: center;
+ 
 }
 
 #players button:hover {
@@ -107,7 +123,7 @@ h1 {
 
 .player-name {
   display: inline-block;
-  width: 10rem;
+  width: 7rem;
   font-size: 1rem;
   color: #e1dec7;
   text-transform: uppercase;
@@ -341,6 +357,7 @@ ol {
   }
 }
 
+
 @media (min-width:300px) and (max-width:425px)
  {
   span.player-name {
@@ -367,5 +384,23 @@ ol {
 }
     
   
+}
+
+@media (max-width: 425px) {
+  .game-container {
+    padding: 10px;
+  }
+}
+
+
+@media screen and (max-width: 893px) {
+  #game-board button {
+   width: 5rem;
+   height: 5rem;
+  }
+
+  #game-hints button{
+    margin-top: 1.5rem
+  }
 }
 

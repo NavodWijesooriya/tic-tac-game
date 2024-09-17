@@ -1,40 +1,31 @@
-
-
-
-
-
-
 export default function GameBoard({ onSelectSquare, board }) {
-    
-
-
 
     return (
-    
-         <ol id="game-board">
 
-        {board.map((row, rowIndex) => (
+        <ol id="game-board">
 
-            <li key={rowIndex}>
+            {board.map((row, rowIndex) => (
 
-                <ol>
+                <li key={rowIndex}>
 
-                    {row.map((playerSymbol, colIndex) => (
+                    <ol>
 
-                        <li key={colIndex}>
+                        {row.map((playerSymbol, colIndex) => (
 
-                            <button onClick={() => onSelectSquare(rowIndex, colIndex) }
-                            disabled={playerSymbol !== null}>
-                                {playerSymbol}
+                            <li key={colIndex}>
+
+                                <button onClick={() => onSelectSquare(rowIndex, colIndex)}
+                                    disabled={playerSymbol !== null}>
+                                    {playerSymbol}
                                 </button>
 
-                        </li>
+                            </li>
 
-                    ))}
-                </ol>
-            </li >
-        ))}
-    </ol>
+                        ))}
+                    </ol>
+                </li >
+            ))}
+        </ol>
 
     );
 }
